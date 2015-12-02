@@ -1,0 +1,301 @@
+.sidebar-item:hover {
+  background-color: #F5F5DC;
+  color: black;
+}
+.carousel-photo {
+  position: absolute;
+  height: 70%;
+  width: 70%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+
+}
+
+#about-title {
+  position: absolute;
+  font-size: 36px;
+  color: white;
+  font-weight: 700;
+    left: 50%;
+    margin-top: 30px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+#about-text {
+  position: absolute;
+  color: white;
+  top: 15%;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  line-height: 50px;
+}
+
+#percussion-video {
+  display: block;
+  margin-left: 50%;
+  left: -280px;
+  margin-top: 100px;
+
+  position: absolute;
+}
+
+#personal-photo {
+  width: 100%;
+  height: 600px;
+  opacity: 0.4;
+/*  padding: 10px;
+  right: 60px;*/
+}
+
+.sub-info {
+  position: absolute;
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+  top: 30%;
+}
+
+#major {
+  top: 40%;
+}
+
+#school {
+  top: 45%;
+}
+
+.sidebar-container {
+  position: fixed;
+  width: 280px;
+  height: 100%;
+  color: black;
+  -webkit-transform: translateX(-280px);
+  -webkit-transition: all 0.3s;
+}
+
+.sidebar-item {
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  padding: 15px 20px 15px 20px;
+  cursor: pointer;
+}
+
+
+.carousel-container {
+  width: 960px;
+  margin: 0 auto;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+#carousel {
+  width: 4800px;
+  height: 100%;
+  margin-left: 0px;
+  -webkit-transition: all 0.3s;
+}
+
+.carousel-item {
+  width: 960px;
+  position: relative;
+  height: 100%;
+  float: left;
+
+}
+
+
+.section {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+
+#name-section {
+  background-color: black;
+  font-family: Oxygen;
+}
+
+#name-text {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 70px;
+  margin-left: 20px;
+  top: 25%;
+}
+
+#about-section {
+  background-color: #8bb2af;
+
+}
+
+#percussion-section {
+  background-color: gray;
+}
+
+/* DOCUMENT SET UP */
+
+body, html {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  min-width: 960px;
+  background-color: black;
+  -webkit-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-family: Lato;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: both;
+}
+
+.img-scaled {
+  width: 100%;
+  height: 100%;
+}
+
+.img-scaled-wh {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#nav-toggle {
+  position: absolute;
+  left: 50%; top: 50%;
+}
+
+#nav-toggle {
+  padding: 10px 30px 15px 0px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  height: 3px;
+  width: 30px;
+  background: #fff;
+  position: absolute;
+  display: block;
+  content: '';
+}
+
+#nav-toggle span:before {
+  top: -10px;
+}
+
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+/* Styling the Sidebar Button */
+#sidebar-button {
+  position: fixed;
+  z-index: 100;
+  left: 15px;
+  top: 15px;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+/* Overriding default styles on the ul */
+.sidebar-container ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.page-wrapper {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s;
+}
+
+/* Styling for the carousel previous button */
+#carousel-prev {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    left: 30px;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s;
+}
+
+/* Styling for the carousel next button */
+#carousel-next {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    right: 30px;
+    top: 50%;
+    margin-top: -30px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    -webkit-transition: all 0.3s;
+}
+
+/* Styling for the quotes and text in each section */
+.quote, .text {
+  position: absolute;
+  font-size: 36px;
+  color: white;
+  font-weight: 700;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* Styling for the author text in each quote */
+.author {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* jQuery Manipulation Classes */
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.wrapper-active, .button-active {
+  -webkit-transform: translateX(280px);
+  -moz-transform: translateX(280px);
+  transform: translateX(280px);
+}
+
+.sidebar-active {
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -o-transform: translateX(0px);
+}
